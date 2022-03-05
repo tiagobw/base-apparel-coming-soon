@@ -1,25 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Size, useWindowSize } from './hooks/useWindowSize';
+import HeroImage from './components/HeroImage';
+import Card from './components/Card';
+import Header from './components/Header';
+
+import './styles/App.css';
+
+import heroDesktopImage from './images/hero-desktop.jpg';
+import heroMobileImage from './images/hero-mobile.jpg';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  const { width }: Size = useWindowSize();
+  const isWidthLessThan800Px = width && width < 800;
+  const imageSrc = isWidthLessThan800Px ? heroMobileImage : heroDesktopImage;
+
+  return isWidthLessThan800Px ? (
+    <>
+      <Header />
+      <HeroImage imageSrc={imageSrc} />
+      <Card />
+    </>
+  ) : (
+    <>
+      <section className='left-container'>
+        <Header />
+        <Card />
+      </section>
+      <HeroImage imageSrc={imageSrc} />
+    </>
   );
 }
 

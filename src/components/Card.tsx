@@ -4,10 +4,10 @@ import Text from './Text';
 
 const Card = () => {
   return (
-    <main className='card'>
+    <section className='card'>
       <Text />
       <Form />
-    </main>
+    </section>
   );
 };
 

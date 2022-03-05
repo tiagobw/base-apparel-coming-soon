@@ -21,10 +21,10 @@ function App() {
     </>
   ) : (
     <>
-      <section className='left-container'>
+      <main className='left-container'>
         <Header />
         <Card />
-      </section>
+      </main>
       <HeroImage imageSrc={imageSrc} />
     </>
   );

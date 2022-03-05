@@ -5,9 +5,9 @@ type HeroImageProps = {
 };
 
 const HeroImage = ({ imageSrc }: HeroImageProps) => (
-  <figure className='hero'>
+  <div role='banner' className='hero'>
     <img className='hero__img' src={imageSrc} alt='A woman with orange shirt' />
-  </figure>
+  </div>
 );
 
 export default HeroImage;

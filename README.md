@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://github.com/tiagobw/base-apparel-coming-soon)
-- Live Site URL: [Live site URL](https://base-apparel-coming-soon-frontendmentor-challenge.netlify.app/)
+- Solution URL: [https://github.com/tiagobw/base-apparel-coming-soon](https://github.com/tiagobw/base-apparel-coming-soon)
+- Live Site URL: [https://base-apparel-coming-soon-frontendmentor-challenge.netlify.app/](https://base-apparel-coming-soon-frontendmentor-challenge.netlify.app/)
 
 ## My process
 

@@ -1,3 +1,6 @@
 .left-container {
+  background: url('../images/bg-pattern-desktop.svg') no-repeat;
+  background-size: cover;
+  width: 100%;
   min-width: 55%;
 }

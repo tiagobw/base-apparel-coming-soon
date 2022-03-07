@@ -9,3 +9,9 @@
     margin: 2rem auto auto auto;
   }
 }
+
+@media screen and (min-width: 1600px) {
+  .header__logo {
+    height: 2.1rem;
+  }
+}

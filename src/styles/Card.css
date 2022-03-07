@@ -101,3 +101,26 @@
     margin-bottom: 1rem;
   }
 }
+
+@media screen and (min-width: 1600px) {
+  .card {
+    margin-top: 7rem;
+  }
+
+  .card__header {
+    font-size: 4.5rem;
+  }
+
+  .card__paragraph {
+    font-size: 1rem;
+  }
+
+  .card__input {
+    padding: 0.75rem 2.3rem;
+  }
+
+  .card__button {
+    border: none;
+    padding: 0.75rem 2.3rem;
+  }
+}
